@@ -15,6 +15,7 @@
 #include "Flinduino_SensorKit_LIS3DHTR.h" 	// Accel
 #include "DHT.h"                        	// Temp & Humidity
 #include "U8x8lib.h"                    	// OLED Display
+#include "U8G2lib.h"						// OLED Graphics Library
 
 //Defines
 #ifndef DHTTYPE
@@ -31,6 +32,7 @@
 //Make the declared components from the .cpp to the sketch available
 //extern U8X8_SSD1306_128X64_NONAME_SW_I2C Oled;
 extern U8X8_SSD1306_128X64_NONAME_HW_I2C Oled;
+extern U8G2_SSD1306_128X64_NONAME_1_HW_I2C OledG;
 extern SensorKit_LIS3DHTR Accelerometer;
 extern SensorKit_BMP280 Pressure;
 extern DHT Environment;
