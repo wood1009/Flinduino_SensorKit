@@ -13,17 +13,13 @@
 //Libraries for components
 #include "Flinduino_SensorKit_BMP280.h"   	// Pressure
 #include "Flinduino_SensorKit_LIS3DHTR.h" 	// Accel
+#include "Flinduino_SensorKit_DHTLINK_Class.h"
 #include "DHT.h"                        	// Temp & Humidity
+#include "DHT20.h"                        	// Temp & Humidity
 #include "U8x8lib.h"                    	// OLED Display
 #include "U8G2lib.h"						// OLED Graphics Library
 
-//Defines
-#ifndef DHTTYPE
-  #define DHTTYPE DHT11
-#endif
-#ifndef DHTPIN
-  #define DHTPIN 3
-#endif
+
 
 //flinduino pins for I2C
 #define SCL 24
@@ -35,5 +31,5 @@ extern U8X8_SSD1306_128X64_NONAME_HW_I2C Oled;
 extern U8G2_SSD1306_128X64_NONAME_1_HW_I2C OledG;
 extern SensorKit_LIS3DHTR Accelerometer;
 extern SensorKit_BMP280 Pressure;
-extern DHT Environment;
+extern DHTLINK Environment;
 #endif
